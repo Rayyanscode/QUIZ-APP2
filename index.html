@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="all">
+    <div id="usernameDiv" class="container my-5">
+        <h2>Enter your Name Here to Pick Your Quiz</h2>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input id="userName" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+                <small id="nameValid" class="text-danger form-text  invalid-feedback">
+                    Please Enter Username to perform further action
+                </small>
+        </div>
+        <hr>
+        <ol class="ol">
+            <li style="text-align: justify;" class="">Once You will start Quiz you have to finish it..</li>
+            <li style="text-align: justify;" class="">You Will Have 5 question to answer</li>
+            <li style="text-align: justify;" class="">Time Duration of your quiz will be 5 minutes</li>
+          </ol>
+        <button id="startBtn" class="btn btn-success">START YOUR QUIZ</button>
+    </div>
+    <div style="display: none;" id="clockdiv">
+        <h1>Countdown Clock</h1>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+
+    <div id="quizDiv" style="display: none;" class="container main-div my-5">
+        <div id="innerDiv" class="inner-div">
+            <!-- <h2 class="my-3">The Quiz Application</h2> -->
+            <ul class="list-group " id="hide">
+                <li class="list-group-item list-group-item-dark">
+                    <h3 id="question">Your Question Here</h3>
+                </li>
+                <li class="list-group-item">
+                    <input id="ans1" class="form-check-input me-1 answer" type="radio" name="answer" aria-label="...">
+                    <label for="ans1" id="option1">answer 1</label>
+                </li>
+                <li class="list-group-item">
+                    <input id="ans2" class="form-check-input me-1 answer" type="radio" name="answer" aria-label="...">
+                    <label for="ans2" id="option2">answer 2</label>
+                </li>
+                <li class="list-group-item">
+                    <input id="ans3" class="form-check-input me-1 answer" type="radio" name="answer" aria-label="...">
+                    <label for="ans3" id="option3">answer 3</label>
+                </li>
+                <li class="list-group-item">
+                    <input id="ans4" class="form-check-input me-1 answer" type="radio" name="answer" aria-label="...">
+                    <label for="ans4" id="option4">answer 4</label>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 col-12 mx-auto my-3">
+                <button id="submit" class="btn btn-primary" type="button">Submit</button>
+            </div>
+            
+        </div>
+        <div id="showScore" class="scoreArea">
+        <div id="showErr" class="scoreArea">
+        </div>
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

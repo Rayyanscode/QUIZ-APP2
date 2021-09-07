@@ -1,0 +1,75 @@
+
+body{
+    background-color: rgb(220, 226, 226);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+.ol li{
+  font-size: 15px;
+  font-weight: bold;
+}
+.my-3{
+    font-size: 50px;
+}
+li, label{
+    font-size: 22px;
+}
+.cardShadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.inner-div{
+    text-align: justify;
+}
+  h1{
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+  }
+  
+  #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+#usernameDiv h2{
+font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-3{
+    font-size: 30px;
+}
+li, label{
+    font-size: 16px;
+}
+#question{
+  font-size: 18px;
+}
+#usernameDiv > h2{
+  font-size: 14px;
+}
+}
